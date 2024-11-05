@@ -8,15 +8,15 @@ app.use(express.static(path.join(__dirname, 'app')));
 
 // Rotte per servire le pagine statiche
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'app', 'index.html'));
+    res.sendFile(path.join(__dirname, 'app', '/index.html'));
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'app', 'about.html'));
+    res.sendFile(path.join(__dirname, 'app', '/about.html'));
 });
 
 app.get('/sitemap', (req, res) => {
-    res.sendFile(path.join(__dirname, 'app', 'sitemap.html'));
+    res.sendFile(path.join(__dirname, 'app', '/sitemap.html'));
 });
 
 app.listen(port, () => {
